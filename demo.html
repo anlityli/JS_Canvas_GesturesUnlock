@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>手势解锁示例</title>
+<script src="gestures-unlock.js"></script>
+<style>
+body { margin:0; padding:0;}
+#gesturesUnlock { background-color:#000;}
+</style>
+
+</head>
+<body>
+<canvas id="gesturesUnlock" width="300" height="300" style="margin-left:10px; margin-top:10px;">
+    您的浏览器不支持canvas！
+</canvas>
+
+</body>
+<script>
+
+var gesturesUnlock = new GesturesUnlock();
+gesturesUnlock.init(function () {
+	alert("您的手势密码是：" + gesturesUnlock.pwdResult);
+});
+
+
+</script>
+
+</html>
