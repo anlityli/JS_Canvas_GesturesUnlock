@@ -1,0 +1,2 @@
+# JS_Canvas_GesturesUnlock
+利用HTML5的Canvas开发的类似于支付宝钱包的手势解锁功能
